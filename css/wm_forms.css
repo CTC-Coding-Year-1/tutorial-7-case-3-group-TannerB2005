@@ -25,13 +25,21 @@ fieldset {
 }
 
 legend {
-   background-color: rgb();
+   background-color: rgb(232, 23, 232);
+   width: 100%;
+   margin-top: 2px;
+   margin-bottom: 2px;
+   margin-left: 0px;
+   margin-right: 0px;
 }
+
 
 
 /* DIV Styles */
 
-
+div#slider {
+   
+}
 
 
 /* Control Styles */
