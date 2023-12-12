@@ -7,8 +7,8 @@
       Case Problem 3
 
       CSS Demo Form
-      Author: 
-      Date:   
+      Author: Tanner, Zahriya
+      Date:  12/12/2023
 
       Filename:   wm_demo.html
 
@@ -16,15 +16,17 @@
    
    <meta charset="utf-8" />
       <title>CSS Styles Demo</title>
-      <link href="wm_reset.css" rel="stylesheet" />      
-      <link href="wm_styles.css" rel="stylesheet" />     
+      <link href="./css/wm_reset.css" rel="stylesheet" />      
+      <link href="./css/wm_styles.css" rel="stylesheet" />
+      <link href="./css/wm_forms.css" rel="stylesheet" />
+      <script src="./js/wm_script.js" />     
    </head>
 
 
    <body>
 
       <header>
-         <img src="wm_logo.png" alt="WidgetMage" />
+         <img src="./images/wm_logo.png" alt="WidgetMage" />
          <nav class="horizontal">
             <ul>
                <li><a href="#">Home</a></li>
@@ -68,10 +70,86 @@
 
       <section>
          <h1>CSS Demo</h1>
-         
+         <!--Zahriya did: id, name, p, option, label. Tanner did: autofocus, tabindex, wrap, fieldset, legend, -->
+         <form>
+            <textarea id="sampleBox" name="sampleText" autofocus tabindex="1" wrap="hard">Enter sample text and press the Tab key</textarea>
+            <p>Select the CSS values from the form below and preveiw the effect on the sample text in the preview box.</p>
+            <fieldset>
+               <legend>Fonts</legend>
+                  <label for="fontfamily">Font Family</label>
+                     <select id="fontfamily">
+                        <optgroup label="generic">
+                           <option id="default" name="default" value="default">default</option>
+                           <option id="serif" name="serif" value="serif">Serif</option>
+                           <option id="monospace" name="monospace" value="monospace">Monospace</option>
+                           <option id="cursive" name="cursive" value="cursive">Cursive</option>
+                           <option id="fantasy" name="fantasy" value="fantasy"></option>
+                           <option id="arial" name="arial" value="arial"></option>
+                        <optgroup/>
+                        <optgroup label="specific">
+                           <option id="book antiqua" name="book antiqua" value="book antiqua">'Book Antiqua'</option>
+                           <option id="courier new" name="courier new" value="courier new">'Courier New'</option>
+                           <option id="geneva" name="geneva" value="geneva">Geneva</option>
+                           <option id="helvetica" name="helvetica" value="helvetica">Helvetica</option>
+                           <option id="impact" name="impact" value="impact">Impact</option>
+                           <option id="palatino" name="palatino" value="palatino">Palatino</option>
+                           <option id="tahoma" name="tahoma" value="tahoma">Tahoma</option>
+                           <option id="times new roman" name="times new roman" value="times new roman">'Times New Roman'</option>
+                        </optgroup>
+                     </select>
 
+                  <label>Font Style</label>
+                     <select>
+                        <option value="normal">Normal</option>
+                        <option value="italic">Italic</option>
+                        <option value="oblique">Oblique</option>
+                     </select>
+                     
+                  <label>Font Weight</label>
+                     <select>
+                        <option value="Normal">Normal</option>
+                        <option value="Bold">Bold</option>
+                     </select>
+
+                  <label>Text Decoration</label>
+                     <select>
+                        <option value="none">None</option>
+                        <option value="line-through">Line-Through</option>
+                        <option value="overline">Overline</option>
+                        <option value="underline">Underline</option>
+                     </select>
+                     
+                  <label>Text Transform</label>
+                     <select>
+                           <option value="none">None</option>
+                           <option value="capitalize">Capitalize</option>
+                           <option value="uppercase">Uppercase</option>
+                           <option value="undercase">Undercase</option>
+                     </select>
+
+                  <label>Font Variant</label>
+                     <select>
+                        <option value="normal">Normal</option>
+                        <option value="small-caps">Small-caps</option>
+                     </select>
+                     
+                     <fieldset>
+                     <legend>Colors</legend>
+                  <label for="colors">Font Color (hexadecimal)</label>
+                        <input type="color" id="color" value="#000000" />
+                        <label for="backgroundColor">Background Color (hexadecimal)</label>
+                        <input id="backgroundcolor" placeholder="#rrggbb" value="#FFFFFF" />
+                     </fieldset>
+
+                     <fieldset>
+                        <legend>Sizes</legend>
+                     </fieldset>
+
+
+
+                           
          <h2>Rendered Text</h2>
-         <div id="output"></div>
+            <div id="output"></div>
          
       </section>
 
