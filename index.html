@@ -19,7 +19,7 @@
       <link href="./css/wm_reset.css" rel="stylesheet" />      
       <link href="./css/wm_styles.css" rel="stylesheet" />
       <link href="./css/wm_forms.css" rel="stylesheet" />
-      <script src="./js/wm_script.js" />     
+      <script src="./js/wm_script.js" defer></script>
    </head>
 
 
@@ -85,7 +85,7 @@
                            <option id="cursive" name="cursive" value="cursive">Cursive</option>
                            <option id="fantasy" name="fantasy" value="fantasy"></option>
                            <option id="arial" name="arial" value="arial"></option>
-                        <optgroup/>
+                        </optgroup>
                         <optgroup label="specific">
                            <option id="book antiqua" name="book antiqua" value="book antiqua">'Book Antiqua'</option>
                            <option id="courier new" name="courier new" value="courier new">'Courier New'</option>
@@ -137,7 +137,7 @@
                      <legend>Colors</legend>
                   <label for="colors">Font Color (hexadecimal)</label>
                         <input type="color" id="color" value="#000000" />
-                        <label for="backgroundColor">Background Color (hexadecimal)</label>
+                        <label for="backgroundcolor">Background Color (hexadecimal)</label>
                         <input id="backgroundcolor" type="color" placeholder="#rrggbb" value="#FFFFFF" />
                      </fieldset>
 
@@ -145,8 +145,27 @@
                         <legend>Sizes</legend>
                         <label>Font Sizes (px)</label>
                         <div class="slider">
-                           <input type="range" min="" max="" step="1" value=""
-                        
+                           8<input type="range" min="8" max="40" step="1" value="14" />40
+                        </div>
+
+                        <div class="slider">
+                           <label>Letter Spacing (px)</label>
+                           0<input type="range" min="0" max="10" step="1" value="0" />10
+                        </div>
+
+                        <div class="slider">
+                           <label>Word Spacing (px)</label>
+                           0<input type="range" min="0" max="10" step="1" value="0" />10
+                        </div>
+
+                        <div class="slider">
+                           <label>Line Height (em)</label>
+                           0<input type="range" min="0" max="4" step="0.2" value="1" />4
+                        </div>
+
+                        <div class="slider">
+                           <label>Text Indent (px)</label>
+                           0<input type="range" min="0" max="10" step="1" value="0" />10
                         </div>
                      </fieldset>
 

@@ -15,7 +15,11 @@
 
 /* Field Set Styles */
 
-
+fieldset {
+   border: none;
+   width: 60%;
+   
+}
 
 
 /* DIV Styles */
