@@ -37,8 +37,9 @@ legend {
 
 /* DIV Styles */
 
-div#slider {
-   
+div.slider {
+float: left;
+
 }
 
 
