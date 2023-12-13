@@ -16,7 +16,7 @@
 /* Field Set Styles */
 
 fieldset {
-   border: none;
+   border: 0;
    width: 60%;
    margin-top: 10px;
    margin-bottom: 10px;
@@ -67,11 +67,17 @@ input, select {
    margin-left: 0px;
 }
 
- input[type=range] {
+ input[type="range"] {
    width: 60%;
 }
 
-input[type=color] {
+select {
+   display: block;
+   float: left;
+   width: 120px;
+}
+
+input[type="color"] {
    display: block;
    float: left;
    width: 75px;
